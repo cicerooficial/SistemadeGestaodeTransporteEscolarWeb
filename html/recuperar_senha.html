@@ -1,0 +1,53 @@
+﻿<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Documento sem título</title>
+<link href="../php/css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="../php/css/index.css" rel="stylesheet" type="text/css">
+<!-- 
+Para saber mais sobre os comentários condicionais sobre as tags html na parte superior do arquivo:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Se você estiver usando a compilação personalizada do modernizr (http://www.modernizr.com/), faça o seguinte:
+* insira o link para o seu js aqui
+* remova o link abaixo para o html5shiv
+* adicione a classe "no-js" às tags html na parte superior
+* você também pode remover o link para respond.min.js se tiver incluído o MQ Polyfill na sua compilação do modernizr 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="../javascript/respond.min.js"></script>
+</head>
+
+<body>
+<div class="gridContainer clearfix">
+<header id="cabecalho" name="cabecalho">
+<hgroup>
+	<h1>Pai do Arthur</h1>
+	<h2>Mãe do Arthur</h2>
+    </hgroup>
+</header>
+<section id="conteudo">
+<center>
+<form name="form" method="post" action="../php/recuperar_senha.php">
+<p align="center"><table>
+    <tr><td colspan="2" align="center"><font size="6">Recuperar Senha</font></td></tr>
+    <tr><td>Email:</td><td><input type="text" name="email" id="email"></td></tr>
+    <td align="center"><input type="submit" value="Recuperar">
+    <input type='reset' value='Limpar'></td></tr>
+</table> </p>
+</form>
+</center>
+</section>
+<footer id="rodape"></footer>
+</div>
+</body>
+</html>

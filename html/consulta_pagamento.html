@@ -1,0 +1,82 @@
+﻿<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Documento sem título</title>
+<link href="../css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="../css/index.css" rel="stylesheet" type="text/css">
+<!-- 
+Para saber mais sobre os comentários condicionais sobre as tags html na parte superior do arquivo:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Se você estiver usando a compilação personalizada do modernizr (http://www.modernizr.com/), faça o seguinte:
+* insira o link para o seu js aqui
+* remova o link abaixo para o html5shiv
+* adicione a classe "no-js" às tags html na parte superior
+* você também pode remover o link para respond.min.js se tiver incluído o MQ Polyfill na sua compilação do modernizr 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="../javascript/respond.min.js"></script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <header id="cabecalho" name="cabecalho">
+
+  <nav class="menu">
+  <ul>
+  <li>  <a href="" class="item-principal">Menu</a> </li>
+			
+				<li><a href="../php/php/listar_usuario.php" class="sub-item">item 1</a></li>
+				<li><a href="../php/php/login.php" class="sub-item">Login</a></li>
+				<li><a href="" class="sub-item">item 3</a></li>
+				<li>
+					<a href="" class="sub-item">item 4</a>
+					<ul>
+						<li><a href="">item 1</a></li>
+						<li><a href="">item 2</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+         <hgroup>
+	<h1>Pai do Arthur</h1>
+	<h2>Mãe do Arthur</h2>
+</hgroup>
+  <p>&nbsp;</p>
+  <p><img src="../img/images.png" id="icone" align="right" /></p>
+  </header>
+  <section id="conteudo">
+<select name="consulta" id="consulta">
+<option>Consultar</option>
+          <option value="pagamento" id="pagamento">Pagamento</option>
+          <option value="registros">Registros de Crianças</option>
+</select>
+<select name="alterar" id="alterar">
+<option>Alterar</option>
+          <option value="cadastro" id="cadastro">Cadastro</option>
+          <option value="registros">Registros de Crianças</option>
+</select>
+<select name="cadastro" id="cadastro">
+<option>Cadastrar</option>
+          <option value="crianca" id="crianca">Criança</option>
+          </select>
+          <br><br>
+          
+          
+          <label for="mes_pagamento">Selecione o Mês:
+          <input type="month" id="dt_pagamento" name="dt_pagemento">
+          </label>
+  
+  </section>
+  <footer id="rodape"></footer>
+</div>
+</body>
+</html

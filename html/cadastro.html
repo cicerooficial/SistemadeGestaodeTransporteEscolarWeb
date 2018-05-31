@@ -1,0 +1,98 @@
+﻿<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cadastro</title>
+<link href="../css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="../css/cadastro.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#fieldset {
+	text-align: center;
+}
+</style>
+<!-- 
+Para saber mais sobre os comentários condicionais sobre as tags html na parte superior do arquivo:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Se você estiver usando a compilação personalizada do modernizr (http://www.modernizr.com/), faça o seguinte:
+* insira o link para o seu js aqui
+* remova o link abaixo para o html5shiv
+* adicione a classe "no-js" às tags html na parte superior
+* você também pode remover o link para respond.min.js se tiver incluído o MQ Polyfill na sua compilação do modernizr 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="../javascript/respond.min.js"></script>
+<script src="../javascript/menu.js"></script>
+</head>
+<body>
+<div id="interface">
+  <div id="cabecalho">
+<div id="menu">
+  <ul class="menu-drop">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sobre</a></li>
+            <li><a href="#">Login</a>
+                <ul>
+                      <li><a href="#">Consultar</a></li>
+                      <li><a href="#">Cadastrar</a></li>                   
+                </ul>
+            </li> 
+</ul></div>
+
+</div>
+    <div id="conteudo">
+    <fieldset id="cadastro"> <legend id="fieldset"> Cadastro da Criança
+</legend>
+      <form method='post' action="../php/salvar_crianca.php" name="salvar_crianca"><center>
+
+<p>
+  <label for='nome'>Nome da Crianca:<br>
+  </label>
+  <input type='text' id='nome' name='nome' size="24">
+</p>
+<p>
+  <label for='sexo'>Sexo:<br>
+  </label>
+  <input type = 'text' id='sexo' name= 'sexo' size="24">
+</p>
+  <p>
+  <label for = 'nascimento'> Data de Nascimento:<br>
+  </label> 
+  <input name='nascimento' type='date'  id='nascimento'>
+ </p>
+<p>
+  <label for = 'cpf'>CPF:<br>
+  </label>
+  <input name = 'cpf' type = 'text' id = 'cpf' size="24">
+  </p>
+<p>
+  <label for = 'text'>RG:<br>
+  </label>
+  <input type = 'text' id = 'rg' name = 'rg' size="24">
+  </p>
+<p>
+  
+  <label for = 'obs'> Observações: </label>
+  <br>
+  <textarea name="obs" cols="25" rows="5" id="obs"></textarea>
+</p>
+<br />
+<hr>
+<button> Salvar </button><br /><br />
+<input type="reset" value="Limpar Formulário"  id="reset">
+</center></form>
+</fieldset>
+    </div>
+      <div id="rodape"></div>
+</div>
+</div>
+</body>
+</html>

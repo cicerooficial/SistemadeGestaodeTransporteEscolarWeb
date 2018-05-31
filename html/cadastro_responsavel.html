@@ -1,0 +1,142 @@
+﻿<?php include('../php/header.php');  ?>
+
+   <form class="userform" name="cadastro_responsavel" method="post" action="../php/salvar_responsavel.php" onSubmit="return validaCampo(); return false;" autocomplete="off" >
+    <fieldset >
+		<legend>Dados Pessoais</legend>
+		<ul>	
+			<label for="nome"> Nome:</label>
+				<input name="nome" type="text" id="nome" maxlength="50" />
+				<span class="style1">*</span><br>
+			  <label for="sexo">Sexo:
+			  <input name="sexo" type="radio" value="Masculino" checked="checked" />
+				Masculino 
+				<input name="sexo" type="radio" value="Feminino" />
+				Feminino </label><span class="style1">*</span><br>
+			 <label for="nascimento"> Data de Nascimento: </label>
+			  <input name="nascimento" type="date" id="nascimento" />
+			  <span class="style1">*</span><br>
+			 <label for="cpf"> CPF:</label>
+			  <input name="cpf" type="text" id="cpf"  maxlength="50" placeholder="Apenas Números" />
+				<span class="style1">*</span><br>
+			
+		   <label for="rg"> RG:</label>
+			<input name="rg" type="text" id="rg"  maxlength="50" placeholder="Apenas Números" />
+				<span class="style1">*</span><br>
+			
+			  <label for="num_dependentes">Núm. de Dependentes:
+			  <input name="num_dependentes" type="number" id="num_dependentes"  maxlength="50" />
+				</label><span class="style1">*</span><br>
+				
+				<label for="numero_tel"> Telefone: </label>
+		   <input name="numero_tel" type="tel" id="numero_tel" placeholder="Apenas Números" />
+	   </ul>
+    </fieldset>    
+    <fieldset >
+	<ul>
+    <legend> Endereço </legend>    
+     <label for="end">Endereço: </label>
+    <input name="end" type="text" id="end" size="32" maxlength="50" placeholder="Rua, Avenida, Estrada" />
+      <span class="style1">*</span><br>
+      <label for="numero"> Número: </label>
+      <input name="numero" type="text" id="numero" size="4" />
+      <span class="style1">*</span><br>
+    
+   <label for="complemento">
+     
+     Complemento:</label>
+    <input name="complemento" type="text" id="complemento" />
+    <br>
+    
+    <label for="bairro"> Bairro:</label>
+    <input name="bairro" type="text" id="bairro"  />
+     <span class="style1">*</span><br>
+
+    <label for="cep">  CEP:</label>
+      <input name="cep" type="text" id="cep" size="10" />
+        <span class="style1">*</span><br>
+        
+     <label for="cidade">   
+      Cidade:</label>
+      <input name="cidade" type="text" id="cidade" maxlength="20" />
+        <span class="style1">*</span><br>
+    
+    <label for="estado">
+      Estado:</label>
+      <select name="estado" id="estado">
+          <option>Selecione...</option>
+          <option value="AC">AC</option>
+          <option value="AL">AL</option>
+          <option value="AP">AP</option>
+          <option value="AM">AM</option>
+          <option value="BA">BA</option>
+          <option value="CE">CE</option>
+          <option value="ES">ES</option>
+          <option value="DF">DF</option>
+          <option value="MA">MA</option>
+          <option value="MT">MT</option>
+          <option value="MS">MS</option>
+          <option value="MG">MG</option>
+          <option value="PA">PA</option>
+          <option value="PB">PB</option>
+          <option value="PR">PR</option>
+          <option value="PE">PE</option>
+          <option value="PI">PI</option>
+          <option value="RJ">RJ</option>
+          <option value="RN">RN</option>
+          <option value="RS">RS</option>
+          <option value="RO">RO</option>
+          <option value="RR">RR</option>
+          <option value="SC">SC</option>
+          <option value="SP">SP</option>
+          <option value="SE">SE</option>
+          <option value="TO">TO</option>
+        </select>
+        <span class="style1">*</span>
+       </ul> 
+    </fieldset>
+    <fieldset>
+	<ul>
+    <legend>Dados do Usuário</legend>
+    <label for="email"> Email:</label>
+      <input name="email" type="email" id="email" /><br>
+    <label for="senha"> Senha:</label>
+      <input name="senha" type="password" id="senha" maxlength="12"  onChange="form.senha_confirm.pattern = this.value;"/>
+    
+    <span class="style1">*</span><br>
+    <label for="senha_confirm"> Digite a senha novamente:</label>
+      <input name="senha_confirm" type="password" id="" maxlength="12"  />
+    <span class="style1">*</span>
+	<br />
+	<li><label for="adm">Administrador:</label>
+	<input type="checkbox" name="adm" />Dar controle total ao usuario</li>
+  </fieldset>
+    
+    <p>
+      <input name="cadastrar" type="submit" id="cadastrar" value="Concluir meu Cadastro!" /> 
+        <br /><br />
+          <input name="limpar" type="reset" id="limpar" value="Limpar Campos preenchidos!" />
+          <br />
+		  <input type="button" onclick="location.href='?m=usuarios&t=listar'" value="Cancelar" />
+
+          <span class="style1">Campos com * são obrigatórios!          </span></p>
+   </ul>
+</fieldset>
+</form>
+</div>
+
+<script>
+
+	jQuery(function($){
+		
+		$("#cep").mask("99999-999");
+		$("#cpf").mask("999.999.999-99");
+		$("#numero_tel").mask("(99) 9999-99999");
+	
+		
+	});
+
+</script>
+
+<?php include('../php/sidebar.php'); ?>
+
+<?php include('../php/footer.php'); ?>
