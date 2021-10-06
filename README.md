@@ -8,7 +8,7 @@ Sistema contruído como prototipo de caso (Real) de um cliente. O sistema além 
 - Impressão de boleto em formato .PDF
 - Impressão de relatórios em formato .PDF
 
-Créditos aos integrantes do grupos:
+Créditos aos integrantes do grupo:
 - Matehus Vargas
 - Lucas Araújo
 - Guilherme Alves
